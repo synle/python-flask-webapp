@@ -1,30 +1,37 @@
 # python-flask-webapp
 
 ## Setup
-```
-  sudo apt install python3-pip -y
+
+### Installing Virtual Env
+
+```bash
+  # install prerequisite for venv
   sudo apt install python3-venv -y
-  sudo apt install python3-flask -y
 
+  # install venv
   python3 -m venv .
-```
 
-
-```
+  # activate venv
   source bin/activate
 ```
 
-```
-  pip3 install SQLAlchemy flask flask-jsonpify flask-sqlalchemy flask-restful
+### Installing Dependencies
+
+```bash
+  # pip install SQLAlchemy flask flask-jsonpify flask-sqlalchemy flask-restful
+  pip install -r requirements.txt
+
+  # to freeze deps
+  # pip freeze > requirements.txt
 ```
 
-```
+
+
+### Start server
+```bash
   FLASK_APP=src/app.py flask run
-```
 
-
-```
-  http://localhost:5000/
+  # server can be accessed at http://localhost:5000/
 ```
 
 
